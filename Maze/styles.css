@@ -1,0 +1,322 @@
+*, *::before, *::after {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: "Raleway", sans-serif ;
+    
+}
+
+body {
+    background-color: #fff ;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end ;
+    background: rgb(91,110,255);
+    background: radial-gradient(circle, rgba(91,110,255,1) 0%, rgba(226,148,233,1) 100%);
+    list-style-type: none ;
+    flex-flow: row wrap ;  
+    
+}
+
+.logo {
+    cursor: pointer ;
+    position: absolute ;
+}
+
+.nav-container a {
+    text-decoration: none ;
+    display: block ;
+    padding: 1rem ;
+    color: white ;
+    padding-right: 1.2rem ;
+    transition: background .35s, scale .15s ;
+}
+
+.nav-container a:hover {
+    background: rgb(63,94,251);
+    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(141,70,252,1) 100%); */
+    transform: scale(1.1) ;
+}
+
+main {
+    display: flex;
+    width: 100% ;
+    height: 92vh ;
+    background-color: #000 ;
+}
+
+.sec-contain-left {
+    display: flex ;
+    width: 60% ;
+    height: 550px ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+h1, p {
+    color: white ;
+    letter-spacing: 1.5px ;
+    text-align: justify ;
+    margin-left: 1rem ;
+    line-height: 3rem ;
+}
+
+.head-intro::after {
+    content: "..." ;
+}
+
+.extra-intro {
+    padding-right: 1rem ;
+}
+
+.btn-grad {background-image: linear-gradient(to right, rgba(91,110,255,1) 0%, rgba(226,148,233,1) 100%)}
+.btn-grad {
+        margin-top: 1rem ;
+    margin-left: 1rem ;
+    padding: 10px 20px;
+    border: none ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 1px;
+    display: inline-block;
+    cursor: pointer ;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 30px rgba(91,110,255,1) ;
+}
+
+.none {
+    background-image: initial ;
+    background-color: black ;
+    border: 1px solid white ;
+
+}
+
+.sec-image-right {
+    width: 40% ;
+    overflow: hidden ;
+}
+
+.hero {
+    width: 100% ;
+    height: 550px ;
+    object-fit: cover ;
+}
+
+.ghap {
+    position: absolute;
+    text-align: justify ;
+    padding-right: 2rem ;
+    bottom: 18rem ;
+    color: #000 ;
+    font-weight: bold ;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(57,35,255,1) 47%, rgba(141,70,252,1) 100%);
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center; align-items: flex-end ;
+    height: 80vh ;
+    background: rgb(240, 240, 240) ;
+    margin-top: 2rem ;
+    
+}
+
+/*  CARD- START  */
+
+.card {
+    width: 300px ; height: 225px ;
+    background: rgb(0, 87, 128) ;
+    position: relative;
+    border-radius: 20px ;
+    cursor: pointer ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .144) ;
+    margin: .5rem ;
+    margin-bottom: 1rem ;
+}
+
+.card img {
+    position: absolute ;
+    width: 100% ;
+    border-radius: 15px ;
+}
+
+.content {
+    position: absolute ;
+    width: 100% ;
+    bottom: 0 ;
+    height: 50px ;
+    padding: .4em 1.5em ;
+    font-size: 14px ;
+    background: rgba(255, 255, 255, 0) ;
+    backdrop-filter: blur(10px) ;
+    border-radius: 10px ;
+    transform: scale(.9) ;
+    color: white ;
+    border: 1px solid rgba(255, 255, 255, .164) ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .144) ;
+    overflow: hidden ;
+    transition: all .7s  ;
+}
+
+.content p {
+    font-size: .8em ;
+    letter-spacing: initial ;
+    line-height: initial ;
+}
+
+.card:hover .content {
+    height: 150px ;
+}
+
+/*  CARD- END  */
+
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    margin-top:  2rem;
+    width: 100% ;
+    z-index: 0 ;
+    margin-bottom: 1rem ;
+}
+
+.overay {
+    position: absolute;
+    text-align: justify ;
+    z-index: 1 ;
+    bottom: 50% ;
+    left: .1rem ;
+}
+
+.quoat {
+    text-align: center ;
+}
+
+.footers {
+    width: 100% ;
+    display: flex ;
+    height: 75vh ;
+}
+
+.footer-left {
+    width: 60% ;
+    background-color: #000;
+    align-items: center ;
+}
+
+.footer-left .copy {
+    color: grey ;
+    font-weight: 300 ;
+}
+
+.footer-left a {
+    display: block;
+    margin: 1.5rem .2rem ; 
+}
+
+.footers a {
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+}
+
+.footers a:hover {
+    text-decoration: underline;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(57,35,255,1) 47%, rgba(141,70,252,1) 100%);
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+} 
+
+.footer-right {
+    border-left: 4px solid rgba(57,35,255,1) ;
+    
+}
+
+.copyandsocial {
+    display: flex;
+    justify-content: center;
+    background: rgb(16,199,201);
+    background: linear-gradient(56deg, rgba(16,199,201,1) 0%, rgba(205,202,40,1) 46%, rgba(253,187,45,1) 100%);
+    
+}
+
+.copyandsocial img {
+    display: block ;
+    width: 50px ;
+    cursor: pointer ;
+    padding: 1rem ;
+}
+
+@media all and (max-width: 800px) {
+    .nav-container {
+        justify-content: space-around ;
+    }
+
+    .logo {
+        display: none ;
+    }
+
+    main {
+        width: 100% ;
+        display: block ;
+    }
+
+    .sec-contain-left {
+        width: 100% ;
+        height: 60vh ;
+
+    }
+
+    .sec-image-right {
+        width: 100% ;
+        height: 33vh ;
+    } 
+
+    .head-intro {
+        margin-right: .5rem ;
+        display: block ;
+        
+    }
+
+    .ghap {
+        display: inline-block ;
+        font-size: .6rem;
+        line-height: 2 ;
+    }
+
+    .container {
+        display: grid ;
+        /* height: 100vh ; */
+        grid-template: repeat(3, 300px) / auto ;
+        justify-items: center ;
+        align-items: center ;
+        align-content: center ;
+
+    }
+
+    .card {
+        
+    }
+}
+
+@font-face {
+    font-family: "Raleway" ;
+    src: url("/FONT/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+    src: url("/FONT/Raleway/Raleway-VariableFont_wght.ttf");
+} 
